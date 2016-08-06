@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation, Input} from '@angular/core';
 
 import {AppState} from '../../../app.state';
 import {BaProfilePicturePipe} from '../../pipes';
@@ -14,7 +14,7 @@ import {BaScrollPosition} from '../../directives';
   encapsulation: ViewEncapsulation.None
 })
 export class BaPageTop {
-
+  @Input() title:String = "<span>ng2-</span>admin";
   public isScrolled:boolean = false;
   public isMenuCollapsed:boolean = false;
 
