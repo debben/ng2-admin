@@ -8,7 +8,7 @@ $angle-right: "\f101";
   width: $sidebar-width;
   top: $top-height;
   left: 0;
-  z-index: 904;
+  z-index: 1001;
   display: block;
   min-height: 100%;
   background-color: $sidebar;
@@ -135,7 +135,7 @@ a.al-sidebar-list-link {
   &.expanded {
     display: block;
   }
-  > li {
+  > ba-menu-item > li {
     display: block;
     float: none;
     padding: 0;

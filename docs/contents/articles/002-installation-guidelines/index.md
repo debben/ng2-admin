@@ -39,6 +39,11 @@ npm install --global typings
 npm install --global typescript
 ```
 
+* bower
+```
+npm install --global bower
+```
+
 ## Clone repository and install dependencies
 
 You will need to clone the source code of ng2-admin GitHub repository:
@@ -52,6 +57,10 @@ npm install
 ```
 This will setup a working copy of ng2-admin on your local machine.
 
+**Note**: If you have any issues after the installation, additionally run the following:
+```bash
+typings install && bower install
+```
 ## Running local copy
 
 To run a local copy in development mode, execute:
