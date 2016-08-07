@@ -1,9 +1,11 @@
-import {Component, ElementRef, HostListener, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, HostListener, ViewEncapsulation, Inject} from '@angular/core';
 import {AppState} from '../../../app.state';
-import {layoutSizes} from '../../../theme';
+import {layoutSizes} from '../../../theme/theme.constants';
 import {BaMenu} from '../baMenu';
 import {routes} from '../../../../app/app.routes';
 import * as _ from 'lodash';
+import { ROUTER_CONFIG } from '@angular/router/src/common_router_providers';
+import {RouterConfig} from '@angular/router';
 
 @Component({
   selector: 'ba-sidebar',
@@ -16,15 +18,15 @@ import * as _ from 'lodash';
 export class BaSidebar {
 
   // here we declare which routes we want to use as a menu in our sidebar
-  public routes = _.cloneDeep(routes); // we're creating a deep copy since we are going to change that object
+  public routes;
 
   public menuHeight:number;
   public isMenuCollapsed:boolean = false;
   public isMenuShouldCollapsed:boolean = false;
 
 
-  constructor(private _elementRef:ElementRef, private _state:AppState) {
-
+  constructor(private _elementRef:ElementRef, private _state:AppState, @Inject(ROUTER_CONFIG) routerConfig:RouterConfig) {
+    this.routes = _.cloneDeep(routerConfig); // we're creating a deep copy since we are going to change that object
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });
