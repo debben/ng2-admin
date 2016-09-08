@@ -1,13 +1,14 @@
-import {Component} from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import {CKEditor} from 'ng2-ckeditor';
-import {BaCard} from '../../../../theme/components/baCard';
 
 import './ckeditor.loader.ts';
 
 @Component({
-  selector: 'ckeditor',
-  directives: [CKEditor, BaCard],
-  template: require('./ckeditor.html')
+  selector: 'ckeditor-component',
+  encapsulation: ViewEncapsulation.None,
+  directives: [CKEditor],
+  template: require('./ckeditor.html'),
+  styles: [require('./ckeditor.scss')]
 })
 
 export class Ckeditor {

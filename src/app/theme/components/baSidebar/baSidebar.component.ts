@@ -1,11 +1,9 @@
 import {Component, ElementRef, HostListener, ViewEncapsulation, Inject} from '@angular/core';
-import {AppState} from '../../../app.state';
-import {layoutSizes} from '../../../theme/theme.constants';
+import {GlobalState} from '../../../global.state';
+import {layoutSizes} from '../../../theme';
 import {BaMenu} from '../baMenu';
-import {routes} from '../../../../app/app.routes';
+import {MENU_TOKEN} from '../../../../app/app.menu';
 import * as _ from 'lodash';
-import { ROUTER_CONFIG } from '@angular/router/src/common_router_providers';
-import {RouterConfig} from '@angular/router';
 
 @Component({
   selector: 'ba-sidebar',
@@ -25,8 +23,8 @@ export class BaSidebar {
   public isMenuShouldCollapsed:boolean = false;
 
 
-  constructor(private _elementRef:ElementRef, private _state:AppState, @Inject(ROUTER_CONFIG) routerConfig:RouterConfig) {
-    this.routes = _.cloneDeep(routerConfig); // we're creating a deep copy since we are going to change that object
+  constructor(private _elementRef:ElementRef, private _state:GlobalState, @Inject(MENU_TOKEN) menuItems) {
+    this.routes = menuItems;
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
       this.isMenuCollapsed = isCollapsed;
     });

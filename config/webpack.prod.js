@@ -128,7 +128,7 @@ module.exports = webpackMerge(commonConfig, {
       'process.env': {
         'ENV': JSON.stringify(METADATA.ENV),
         'NODE_ENV': JSON.stringify(METADATA.ENV),
-        'HMR': METADATA.HMR,
+        'HMR': METADATA.HMR
       }
     }),
 
@@ -157,8 +157,10 @@ module.exports = webpackMerge(commonConfig, {
 
 
       beautify: false, //prod
-      mangle: { screw_ie8 : true }, //prod
+      /* eslint-disable camelcase */
+      mangle: false,
       compress: { screw_ie8: true }, //prod
+      /* eslint-enable camelcase */
       comments: false //prod
     }),
 
