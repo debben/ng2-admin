@@ -9,9 +9,7 @@ import * as _ from 'lodash';
   selector: 'ba-sidebar',
   encapsulation: ViewEncapsulation.None,
   styles: [require('./baSidebar.scss')],
-  template: require('./baSidebar.html'),
-  providers: [],
-  directives: [BaMenu]
+  template: require('./baSidebar.html')
 })
 export class BaSidebar {
 
