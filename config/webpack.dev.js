@@ -9,6 +9,7 @@ const commonConfig = require('./webpack.common.js'); // the settings that are co
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const NamedModulesPlugin = require('webpack/lib/NamedModulesPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
+const ngtools = require('@ngtools/webpack');
 
 /**
  * Webpack Constants
@@ -136,6 +137,12 @@ module.exports = function (options) {
             resourcePath: 'src'
           }
         }
+      }),
+
+      new ngtools.AotPlugin({
+        tsConfigPath: './tsconfig.aot.json',
+        baseDir: process.cwd(),
+        entryModule: path.join(process.cwd(), 'src', 'app', 'app.module') + "#AppModule"
       })
     ],
 

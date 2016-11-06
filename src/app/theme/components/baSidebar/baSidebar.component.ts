@@ -6,9 +6,9 @@ import * as _ from 'lodash';
 
 @Component({
   selector: 'ba-sidebar',
-  encapsulation: ViewEncapsulation.None,
-  styles: [require('./baSidebar.scss')],
-  template: require('./baSidebar.html')
+  encapsulation: ViewEncapsulation.Emulated,
+  styleUrls: ['./baSidebar.scss'],
+  templateUrl: './baSidebar.html'
 })
 export class BaSidebar {
 

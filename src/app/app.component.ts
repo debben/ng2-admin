@@ -1,18 +1,19 @@
 import './app.loader.ts';
-import { Component, ViewEncapsulation, ViewContainerRef } from '@angular/core';
+import { Component, ViewContainerRef } from '@angular/core';
 import { GlobalState } from './global.state';
 import { BaImageLoaderService, BaThemePreloader, BaThemeSpinner } from './theme/services';
 import { layoutPaths } from './theme/theme.constants';
 import { BaThemeConfig } from './theme/theme.config';
 
+// because ViewEncapsulation was "None", load with global style loader
+import 'style!normalize.css';
+import 'style!./app.scss';
 /*
  * App Component
  * Top Level Component
  */
 @Component({
   selector: 'app',
-  encapsulation: ViewEncapsulation.None,
-  styles: [require('normalize.css'), require('./app.scss')],
   template: `
     <main [ngClass]="{'menu-collapsed': isMenuCollapsed}" baThemeRun>
       <div class="additional-bg"></div>

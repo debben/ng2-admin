@@ -2,7 +2,7 @@ import {Component, ViewChild, HostListener, Input, ElementRef} from '@angular/co
 
 @Component({
   selector: 'ba-back-top',
-  styles: [require('./baBackTop.scss')],
+  styleUrls: ['./baBackTop.scss'],
   template: `
     <i #baBackTop class="fa fa-angle-up back-top ba-back-top" title="Back to Top"></i>
   `
