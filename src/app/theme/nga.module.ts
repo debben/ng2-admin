@@ -11,47 +11,36 @@ import {
   BaThemeConfigProvider
 } from './theme.configProvider';
 
-import {
-  BaAmChart,
-  BaBackTop,
-  BaCard,
-  BaChartistChart,
-  BaCheckbox,
-  BaContentTop,
-  BaFullCalendar,
-  BaMenuItem,
-  BaMenu,
-  BaMsgCenter,
-  BaMultiCheckbox,
-  BaPageTop,
-  BaPictureUploader,
-  BaSidebar
-} from './components';
-
+import { BaAmChart } from './components/baAmChart/baAmChart.component';
+import { BaBackTop } from './components/baBackTop/baBackTop.component';
+import { BaCard } from './components/baCard/baCard.component';
+import { BaChartistChart } from './components/baChartistChart/baChartistChart.component';
+import { BaCheckbox } from './components/baCheckbox/baCheckbox.component';
+import { BaContentTop } from './components/baContentTop/baContentTop.component';
+import { BaFullCalendar } from './components/baFullCalendar/baFullCalendar.component';
+import { BaMenuItem } from './components/baMenu/components/baMenuItem.component';
+import { BaMenu } from './components/baMenu/baMenu.component';
+import { BaMsgCenter } from './components/baMsgCenter/baMsgCenter.component';
+import { BaMultiCheckbox } from './components/baMultiCheckbox/baMultiCheckbox.component';
+import { BaPageTop } from './components/baPageTop/baPageTop.component';
+import { BaPictureUploader } from './components/baPictureUploader/baPictureUploader.component';
+import { BaSidebar } from './components/baSidebar/baSidebar.component';
 import { BaCardBlur } from './components/baCard/baCardBlur.directive';
 
-import {
-  BaScrollPosition,
-  BaSlimScroll,
-  BaThemeRun
-} from './directives';
+import { BaScrollPosition } from './directives/baScrollPosition/baScrollPosition.directive';
+import { BaSlimScroll } from './directives/baSlimScroll/baSlimScroll.directive';
+import { BaThemeRun } from './directives/baThemeRun/baThemeRun.directive';
 
-import {
-  BaAppPicturePipe,
-  BaKameleonPicturePipe,
-  BaProfilePicturePipe
-} from './pipes';
+import { BaAppPicturePipe } from './pipes/baAppPicture/baAppPicture.pipe';
+import { BaKameleonPicturePipe } from './pipes/baKameleonPicture/baKameleonPicture.pipe';
+import { BaProfilePicturePipe } from './pipes/baProfilePicture/baProfilePicture.pipe';
 
-import {
-  BaImageLoaderService,
-  BaThemePreloader,
-  BaThemeSpinner
-} from './services';
+import { BaImageLoaderService } from './services/baImageLoader/baImageLoader.service';
+import { BaThemePreloader } from './services/baThemePreloader/baThemePrealoader.service';
+import { BaThemeSpinner } from './services/baThemeSpinner/baThemeSpinner.service';
 
-import {
-  EmailValidator,
-  EqualPasswordsValidator
-} from './validators';
+import { EmailValidator } from './validators/email.validator';
+import { EqualPasswordsValidator } from './validators/equalPasswords.validator';
 
 const NGA_COMPONENTS = [
   BaAmChart,
@@ -61,7 +50,7 @@ const NGA_COMPONENTS = [
   BaCheckbox,
   BaContentTop,
   BaFullCalendar,
-  BaMenuItem,
+  // BaMenuItem,
   BaMenu,
   BaMsgCenter,
   BaMultiCheckbox,
