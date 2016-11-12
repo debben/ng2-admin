@@ -16,7 +16,7 @@ import {Chartist} from './baChartistChart.loader.ts';
 @Component({
   selector: 'ba-chartist-chart',
   encapsulation: ViewEncapsulation.Emulated,
-  styleUrls: ['chartist/dist/chartist.css', './baChartistChart.scss'],
+  styleUrls: ['/chartist/dist/chartist.css', './baChartistChart.scss'],
   templateUrl: './baChartistChart.html'
 })
 export class BaChartistChart {

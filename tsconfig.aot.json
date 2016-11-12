@@ -30,7 +30,8 @@
     "dist"
   ],
   "files": [
-    "src/app/app.module.ts"  
+    "src/custom-typings.d.ts",
+    "src/app/app.module.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
