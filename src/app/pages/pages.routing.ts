@@ -1,5 +1,6 @@
 import { Routes, RouterModule }  from '@angular/router';
 import { Pages } from './pages.component';
+import { ModuleWithProviders } from '@angular/core';
 // noinspection TypeScriptValidateTypes
 export const routes: Routes = [
   // {
@@ -15,7 +16,7 @@ export const routes: Routes = [
     component: Pages,
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-      { path: 'dashboard', loadChildren: './dashboard/dashboard.module' },
+      { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
       // { path: 'editors', loadChildren: './editors/editors.module' },
       // //{ path: 'components', loadChildren: () => System.import('./components/components.module') }
       // { path: 'charts', loadChildren: './charts/charts.module' },
@@ -27,4 +28,4 @@ export const routes: Routes = [
   }
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders = RouterModule.forChild(routes);

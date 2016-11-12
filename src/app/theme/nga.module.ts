@@ -36,7 +36,7 @@ import { BaSidebar } from './components/baSidebar/baSidebar.component';
 import { BaProfilePicturePipe } from './pipes/baProfilePicture/baProfilePicture.pipe';
 
 import { BaImageLoaderService } from './services/baImageLoader/baImageLoader.service';
-import { BaThemePreloader } from './services/baThemePreloader/baThemePrealoader.service';
+import { BaThemePreloader } from './services/baThemePreloader/baThemePreloader.service';
 import { BaThemeSpinner } from './services/baThemeSpinner/baThemeSpinner.service';
 
 import { EmailValidator } from './validators/email.validator';
