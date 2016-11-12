@@ -46,19 +46,6 @@ module.exports = function (options) {
      */
     //cache: false,
 
-    /*
-     * The entry point for the bundle
-     * Our Angular.js app
-     *
-     * See: http://webpack.github.io/docs/configuration.html#entry
-     */
-    entry: {
-
-      'polyfills': './src/polyfills.browser.ts',
-      'vendor': './src/vendor.browser.ts',
-      'main': './src/main.browser.ts'
-
-    },
 
     /*
      * Options affecting the resolving of modules.

@@ -33,6 +33,20 @@ const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
 module.exports = function (options) {
   return webpackMerge(commonConfig({env: ENV}), {
 
+    /*
+     * The entry point for the bundle
+     * Our Angular.js app
+     *
+     * See: http://webpack.github.io/docs/configuration.html#entry
+     */
+    entry: {
+
+      'polyfills': './src/polyfills.browser.ts',
+      'vendor': './src/vendor.browser.ts',
+      'main': './src/main.browser.ts'
+
+    },
+
     /**
      * Developer tool to enhance debugging
      *
@@ -137,12 +151,6 @@ module.exports = function (options) {
             resourcePath: 'src'
           }
         }
-      }),
-
-      new ngtools.AotPlugin({
-        tsConfigPath: './tsconfig.aot.json',
-        baseDir: process.cwd(),
-        entryModule: path.join(process.cwd(), 'src', 'app', 'app.module') + "#AppModule"
       })
     ],
 
