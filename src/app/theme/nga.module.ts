@@ -11,28 +11,28 @@ import {
   BaThemeConfigProvider
 } from './theme.configProvider';
 
-// import { BaAmChart } from './components/baAmChart/baAmChart.component';
+import { BaAmChart } from './components/baAmChart/baAmChart.component';
 import { BaBackTop } from './components/baBackTop/baBackTop.component';
-// import { BaCard } from './components/baCard/baCard.component';
-// import { BaChartistChart } from './components/baChartistChart/baChartistChart.component';
-// import { BaCheckbox } from './components/baCheckbox/baCheckbox.component';
+import { BaCard } from './components/baCard/baCard.component';
+import { BaChartistChart } from './components/baChartistChart/baChartistChart.component';
+import { BaCheckbox } from './components/baCheckbox/baCheckbox.component';
 import { BaContentTop } from './components/baContentTop/baContentTop.component';
-// import { BaFullCalendar } from './components/baFullCalendar/baFullCalendar.component';
+import { BaFullCalendar } from './components/baFullCalendar/baFullCalendar.component';
 import { BaMenuItem } from './components/baMenu/components/baMenuItem/baMenuItem.component';
 import { BaMenu } from './components/baMenu/baMenu.component';
 import { BaMsgCenter } from './components/baMsgCenter/baMsgCenter.component';
-// import { BaMultiCheckbox } from './components/baMultiCheckbox/baMultiCheckbox.component';
+import { BaMultiCheckbox } from './components/baMultiCheckbox/baMultiCheckbox.component';
 import { BaPageTop } from './components/baPageTop/baPageTop.component';
-// import { BaPictureUploader } from './components/baPictureUploader/baPictureUploader.component';
+import { BaPictureUploader } from './components/baPictureUploader/baPictureUploader.component';
 import { BaSidebar } from './components/baSidebar/baSidebar.component';
-// import { BaCardBlur } from './components/baCard/baCardBlur.directive';
+import { BaCardBlur } from './components/baCard/baCardBlur.directive';
 
-// import { BaScrollPosition } from './directives/baScrollPosition/baScrollPosition.directive';
-// import { BaSlimScroll } from './directives/baSlimScroll/baSlimScroll.directive';
-// import { BaThemeRun } from './directives/baThemeRun/baThemeRun.directive';
+import { BaScrollPosition } from './directives/baScrollPosition/baScrollPosition.directive';
+import { BaSlimScroll } from './directives/baSlimScroll/baSlimScroll.directive';
+import { BaThemeRun } from './directives/baThemeRun/baThemeRun.directive';
 
-// import { BaAppPicturePipe } from './pipes/baAppPicture/baAppPicture.pipe';
-// import { BaKameleonPicturePipe } from './pipes/baKameleonPicture/baKameleonPicture.pipe';
+import { BaAppPicturePipe } from './pipes/baAppPicture/baAppPicture.pipe';
+import { BaKameleonPicturePipe } from './pipes/baKameleonPicture/baKameleonPicture.pipe';
 import { BaProfilePicturePipe } from './pipes/baProfilePicture/baProfilePicture.pipe';
 
 import { BaImageLoaderService } from './services/baImageLoader/baImageLoader.service';
@@ -43,32 +43,32 @@ import { EmailValidator } from './validators/email.validator';
 import { EqualPasswordsValidator } from './validators/equalPasswords.validator';
 
 const NGA_COMPONENTS = [
-  // BaAmChart,
+  BaAmChart,
   BaBackTop,
-  // BaCard,
-  // BaChartistChart,
-  // BaCheckbox,
+  BaCard,
+  BaChartistChart,
+  BaCheckbox,
   BaContentTop,
-  // BaFullCalendar,
+  BaFullCalendar,
   BaMenuItem,
   BaMenu,
   BaMsgCenter,
-  // BaMultiCheckbox,
+  BaMultiCheckbox,
   BaPageTop,
-  // BaPictureUploader,
+  BaPictureUploader,
   BaSidebar
 ];
 
 const NGA_DIRECTIVES = [
-  // BaScrollPosition,
-  // BaSlimScroll,
-  // BaThemeRun,
-  // BaCardBlur
+  BaScrollPosition,
+  BaSlimScroll,
+  BaThemeRun,
+  BaCardBlur
 ];
 
 const NGA_PIPES = [
-  // BaAppPicturePipe,
-  // BaKameleonPicturePipe,
+  BaAppPicturePipe,
+  BaKameleonPicturePipe,
   BaProfilePicturePipe
 ];
 
