@@ -5,8 +5,8 @@ import {LineChartService} from './lineChart.service';
 @Component({
   selector: 'line-chart',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./lineChart.scss')],
-  template: require('./lineChart.html')
+  styleUrls: ['./lineChart.scss'],
+  templateUrl: './lineChart.html'
 })
 export class LineChart {
 

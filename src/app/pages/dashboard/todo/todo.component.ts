@@ -6,8 +6,8 @@ import {TodoService} from './todo.service';
 @Component({
   selector: 'todo',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./todo.scss')],
-  template: require('./todo.html')
+  styleUrls: ['./todo.scss'],
+  templateUrl: './todo.html'
 })
 export class Todo {
   

@@ -6,8 +6,8 @@ import {TrafficChartService} from './trafficChart.service';
 @Component({
   selector: 'traffic-chart',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./trafficChart.scss')],
-  template: require('./trafficChart.html')
+  styleUrls: ['./trafficChart.scss'],
+  templateUrl: './trafficChart.html'
 })
 
 // TODO: move chart.js to it's own component

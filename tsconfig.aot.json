@@ -31,7 +31,8 @@
   ],
   "files": [
     "src/custom-typings.d.ts",
-    "src/app/app.module.ts"
+    "src/app/app.module.ts",
+    "src/app/pages/dashboard/dashboard.module.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,

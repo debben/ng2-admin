@@ -12,8 +12,9 @@ export class BaFullCalendar {
   @Input() baFullCalendarConfiguration:Object;
   @Input() baFullCalendarClass:string;
   @Output() onCalendarReady = new EventEmitter<any>();
-
-  @ViewChild('baFullCalendar') private _selector:ElementRef;
+  
+  // make public for when accessed via component.ngfactory
+  @ViewChild('baFullCalendar') public _selector:ElementRef;
 
   ngAfterViewInit() {
     let calendar = jQuery(this._selector.nativeElement).fullCalendar(this.baFullCalendarConfiguration);

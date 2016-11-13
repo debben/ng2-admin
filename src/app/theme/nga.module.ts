@@ -15,13 +15,13 @@ import { BaAmChart } from './components/baAmChart/baAmChart.component';
 import { BaBackTop } from './components/baBackTop/baBackTop.component';
 import { BaCard } from './components/baCard/baCard.component';
 import { BaChartistChart } from './components/baChartistChart/baChartistChart.component';
-import { BaCheckbox } from './components/baCheckbox/baCheckbox.component';
+// import { BaCheckbox } from './components/baCheckbox/baCheckbox.component';
 import { BaContentTop } from './components/baContentTop/baContentTop.component';
 import { BaFullCalendar } from './components/baFullCalendar/baFullCalendar.component';
 import { BaMenuItem } from './components/baMenu/components/baMenuItem/baMenuItem.component';
 import { BaMenu } from './components/baMenu/baMenu.component';
 import { BaMsgCenter } from './components/baMsgCenter/baMsgCenter.component';
-import { BaMultiCheckbox } from './components/baMultiCheckbox/baMultiCheckbox.component';
+// import { BaMultiCheckbox } from './components/baMultiCheckbox/baMultiCheckbox.component';
 import { BaPageTop } from './components/baPageTop/baPageTop.component';
 import { BaPictureUploader } from './components/baPictureUploader/baPictureUploader.component';
 import { BaSidebar } from './components/baSidebar/baSidebar.component';
@@ -47,13 +47,13 @@ const NGA_COMPONENTS = [
   BaBackTop,
   BaCard,
   BaChartistChart,
-  BaCheckbox,
+  // BaCheckbox,
   BaContentTop,
   BaFullCalendar,
   BaMenuItem,
   BaMenu,
   BaMsgCenter,
-  BaMultiCheckbox,
+  // BaMultiCheckbox,
   BaPageTop,
   BaPictureUploader,
   BaSidebar

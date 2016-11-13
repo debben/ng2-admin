@@ -5,8 +5,8 @@ import {CalendarService} from './calendar.service';
 @Component({
   selector: 'calendar',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./calendar.scss')],
-  template: require('./calendar.html')
+  styleUrls: ['./calendar.scss'],
+  templateUrl: './calendar.html'
 })
 export class Calendar {
 

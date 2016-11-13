@@ -17,7 +17,8 @@ export class BaAmChart {
   @Input() baAmChartClass:string;
   @Output() onChartReady = new EventEmitter<any>();
 
-  @ViewChild('baAmChart') private _selector:ElementRef;
+  // make public for when accessed via component.ngfactory
+  @ViewChild('baAmChart') public _selector:ElementRef;
 
   constructor (private _baAmChartThemeService:BaAmChartThemeService) {
     this._loadChartsLib();

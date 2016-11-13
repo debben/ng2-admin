@@ -5,8 +5,8 @@ import {UsersMapService} from './usersMap.service';
 @Component({
   selector: 'users-map',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./usersMap.scss')],
-  template: require('./usersMap.html')
+  styleUrls: ['./usersMap.scss'],
+  templateUrl: './usersMap.html'
 })
 export class UsersMap {
 

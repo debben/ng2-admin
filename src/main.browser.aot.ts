@@ -8,14 +8,14 @@ import { bootloader } from '@angularclass/hmr';
  * App Module
  * our top level module that holds all of our components
  */
-import { AppModuleNgFamily } from './app/app.module.ngfactory';
-
+import { AppModuleNgFactory } from './app/app.module.ngfactory';
+import './app/pages/dashboard/dashboard.module.ngfactory';
 /*
  * Bootstrap our Angular app with a top level NgModule
  */
 export function main(): Promise<any> {
   return platformBrowser()
-    .bootstrapModuleFactory(AppModuleNgFamily)
+    .bootstrapModuleFactory(AppModuleNgFactory)
     .then(decorateModuleRef)
     .catch(err => console.error(err));
 

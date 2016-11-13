@@ -7,8 +7,8 @@ import './pieChart.loader.ts';
 @Component({
   selector: 'pie-chart',
   encapsulation: ViewEncapsulation.None,
-  styles: [require('./pieChart.scss')],
-  template: require('./pieChart.html')
+  styleUrls: ['./pieChart.scss'],
+  templateUrl: './pieChart.html'
 })
 // TODO: move easypiechart to component
 export class PieChart {
