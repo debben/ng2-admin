@@ -14,6 +14,7 @@ export const PAGES_MENU = [
           }
         }
       },
+      /*
       {
         path: 'editors',
         data: {
@@ -325,6 +326,7 @@ export const PAGES_MENU = [
           }
         }
       }
+      */
     ]
   }
 ];
