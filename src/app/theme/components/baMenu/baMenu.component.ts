@@ -8,8 +8,8 @@ import {GlobalState} from '../../../global.state';
 @Component({
   selector: 'ba-menu',
   encapsulation: ViewEncapsulation.Emulated,
-  styles: ['./baMenu.scss'],
-  template: './baMenu.html',
+  styleUrls: ['./baMenu.scss'],
+  templateUrl: './baMenu.html',
   providers: [BaMenuService]
 })
 export class BaMenu {
