@@ -1,4 +1,5 @@
 const helpers = require('./helpers');
+const path = require('path');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 
@@ -13,6 +14,7 @@ const NormalModuleReplacementPlugin = require('webpack/lib/NormalModuleReplaceme
 const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
+const ngtools = require('@ngtools/webpack');
 
 /**
  * Webpack Constants
@@ -51,6 +53,26 @@ module.exports = function (env) {
      * See: https://github.com/webpack/docs/wiki/build-performance#sourcemaps
      */
     devtool: 'source-map',
+
+    module: {
+      rules: [
+        /*
+         * Typescript loader support for .ts and Angular 2 async routes via .async.ts
+         * Replace templateUrl and stylesUrl with require()
+         *
+         * See: https://github.com/s-panferov/awesome-typescript-loader
+         * See: https://github.com/TheLarkInn/angular2-template-loader
+         */
+        {
+          test: /\.ts$/,
+          loaders: [
+            '@ngtools/webpack',
+            // 'angular2-router-loader?aot=true&loader=system'
+          ],
+          exclude: [/\.(spec|e2e)\.ts$/]
+        },
+      ]
+    },
 
     /**
      * Options affecting the output of the compilation.
@@ -151,28 +173,28 @@ module.exports = function (env) {
        * See: https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
        */
       // NOTE: To debug prod builds uncomment //debug lines and comment //prod lines
-      new UglifyJsPlugin({
-        // beautify: true, //debug
-        // mangle: false, //debug
-        // dead_code: false, //debug
-        // unused: false, //debug
-        // deadCode: false, //debug
-        // compress: {
-        //   screw_ie8: true,
-        //   keep_fnames: true,
-        //   drop_debugger: false,
-        //   dead_code: false,
-        //   unused: false
-        // }, // debug
-        // comments: true, //debug
+      // new UglifyJsPlugin({
+      //   // beautify: true, //debug
+      //   // mangle: false, //debug
+      //   // dead_code: false, //debug
+      //   // unused: false, //debug
+      //   // deadCode: false, //debug
+      //   // compress: {
+      //   //   screw_ie8: true,
+      //   //   keep_fnames: true,
+      //   //   drop_debugger: false,
+      //   //   dead_code: false,
+      //   //   unused: false
+      //   // }, // debug
+      //   // comments: true, //debug
 
 
-        beautify: false, //prod
-        // mangle: { screw_ie8 : true, keep_fnames: true }, //prod
-        mangle: false,
-        compress: { screw_ie8: true }, //prod
-        comments: false //prod
-      }),
+      //   beautify: false, //prod
+      //   // mangle: { screw_ie8 : true, keep_fnames: true }, //prod
+      //   mangle: false,
+      //   compress: { screw_ie8: true }, //prod
+      //   comments: false //prod
+      // }),
 
       /**
        * Plugin: NormalModuleReplacementPlugin

@@ -64,6 +64,10 @@ module.exports = function (options) {
       // An array of directory names to be resolved to the current directory
       modules: [helpers.root('src'), 'node_modules'],
 
+      alias: {
+        "lazy/dashboard": "app/pages/dashboard"
+      }
+
     },
 
     /*
@@ -83,24 +87,6 @@ module.exports = function (options) {
           },
           include: [helpers.root('src')],
           enforce: 'pre'
-        },
-
-        /*
-         * Typescript loader support for .ts and Angular 2 async routes via .async.ts
-         * Replace templateUrl and stylesUrl with require()
-         *
-         * See: https://github.com/s-panferov/awesome-typescript-loader
-         * See: https://github.com/TheLarkInn/angular2-template-loader
-         */
-        {
-          test: /\.ts$/,
-          loaders: [
-            '@angularclass/hmr-loader?pretty=' + !isProd + '&prod=' + isProd,
-            'awesome-typescript-loader',
-            'angular2-template-loader',
-            'angular2-router-loader'
-          ],
-          exclude: [/\.(spec|e2e)\.ts$/]
         },
 
         /*
@@ -214,7 +200,9 @@ module.exports = function (options) {
       new ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
         /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-        helpers.root('src') // location of your src
+        helpers.root('src'), {
+          './dashboard.module': './app/pages/dashboard/dashboard.module'
+        } // location of your src
       ),
 
       /*
