@@ -5,7 +5,7 @@ import {TrafficChartService} from './trafficChart.service';
 
 @Component({
   selector: 'traffic-chart',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   styleUrls: ['./trafficChart.scss'],
   templateUrl: './trafficChart.html'
 })

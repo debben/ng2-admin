@@ -4,10 +4,13 @@ import {PieChartService} from './pieChart.service';
 
 import './pieChart.loader.ts';
 
+// for now, just insert globally till we fix the scss for emulated.
+import 'style!./pieChart.scss';
+
 @Component({
   selector: 'pie-chart',
-  encapsulation: ViewEncapsulation.None,
-  styleUrls: ['./pieChart.scss'],
+  // encapsulation: ViewEncapsulation.Emulated,
+  // styleUrls: ['./pieChart.scss'],
   templateUrl: './pieChart.html'
 })
 // TODO: move easypiechart to component

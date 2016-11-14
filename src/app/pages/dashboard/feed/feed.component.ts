@@ -4,7 +4,7 @@ import {FeedService} from './feed.service';
 
 @Component({
   selector: 'feed',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   styleUrls: ['./feed.scss'],
   templateUrl: './feed.html'
 })

@@ -5,7 +5,7 @@ import {TodoService} from './todo.service';
 
 @Component({
   selector: 'todo',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   styleUrls: ['./todo.scss'],
   templateUrl: './todo.html'
 })

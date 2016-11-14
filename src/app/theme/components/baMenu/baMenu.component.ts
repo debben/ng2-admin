@@ -7,8 +7,6 @@ import {GlobalState} from '../../../global.state';
 
 @Component({
   selector: 'ba-menu',
-  encapsulation: ViewEncapsulation.Emulated,
-  styleUrls: ['./baMenu.scss'],
   templateUrl: './baMenu.html',
   providers: [BaMenuService]
 })

@@ -8,7 +8,6 @@ import {BaAmChartThemeService} from './baAmChartTheme.service';
 @Component({
   selector: 'ba-am-chart',
   templateUrl: './baAmChart.html',
-  encapsulation: ViewEncapsulation.None,
   providers: [BaAmChartThemeService],
 })
 export class BaAmChart {

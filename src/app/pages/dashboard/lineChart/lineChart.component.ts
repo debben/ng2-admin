@@ -2,10 +2,13 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 import {LineChartService} from './lineChart.service';
 
+// for now just use style loader until the scss is changed for emulated view encapsulation
+import 'style!./lineChart.scss';
+
 @Component({
   selector: 'line-chart',
-  encapsulation: ViewEncapsulation.None,
-  styleUrls: ['./lineChart.scss'],
+  // encapsulation: ViewEncapsulation.Emulated,
+  // styleUrls: ['./lineChart.scss'],
   templateUrl: './lineChart.html'
 })
 export class LineChart {

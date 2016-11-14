@@ -67,7 +67,7 @@ module.exports = function (env) {
           test: /\.ts$/,
           loaders: [
             '@ngtools/webpack',
-            // 'angular2-router-loader?aot=true&loader=system'
+            'angular2-router-loader?aot=true&sync=true'
           ],
           exclude: [/\.(spec|e2e)\.ts$/]
         },

@@ -4,7 +4,7 @@ import {CalendarService} from './calendar.service';
 
 @Component({
   selector: 'calendar',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   styleUrls: ['./calendar.scss'],
   templateUrl: './calendar.html'
 })
