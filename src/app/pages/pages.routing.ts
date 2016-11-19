@@ -18,10 +18,10 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule?sync=true' },
-      // { path: 'editors', loadChildren: './editors/editors.module' },
+      // { path: 'editors', loadChildren: 'app/pages/editors/editors.module#EditorsModule?sync=true' },
       // //{ path: 'components', loadChildren: () => System.import('./components/components.module') }
       // { path: 'charts', loadChildren: './charts/charts.module' },
-      // { path: 'ui', loadChildren: './ui/ui.module' },
+      { path: 'ui', loadChildren: 'app/pages/ui/ui.module#UiModule?sync=true' },
       // { path: 'forms', loadChildren: './forms/forms.module' },
       // { path: 'tables', loadChildren: './tables/tables.module' },
       // { path: 'maps', loadChildren: './maps/maps.module' }

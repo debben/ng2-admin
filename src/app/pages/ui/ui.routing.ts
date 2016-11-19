@@ -6,6 +6,7 @@ import { Grid } from './components/grid/grid.component';
 import { Icons } from './components/icons/icons.component';
 import { Modals } from './components/modals/modals.component';
 import { Typography } from './components/typography/typography.component';
+import { ModuleWithProviders } from '@angular/core';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
@@ -22,4 +23,4 @@ const routes: Routes = [
   }
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders = RouterModule.forChild(routes);
