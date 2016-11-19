@@ -4,14 +4,14 @@ import { ModuleWithProviders } from '@angular/core';
 
 // noinspection TypeScriptValidateTypes
 export const routes: Routes = [
-  // {
-  //   path: 'login',
-  //   loadChildren: './login/login.module'
-  // },
-  // {
-  //   path: 'register',
-  //   loadChildren: './register/register.module'
-  // },
+  {
+    path: 'login',
+    loadChildren: 'app/pages/login/login.module#LoginModule?sync=true'
+  },
+  {
+    path: 'register',
+    loadChildren: 'app/pages/register/register.module#RegisterModule?sync=true'
+  },
   {
     path: 'pages',
     component: Pages,
