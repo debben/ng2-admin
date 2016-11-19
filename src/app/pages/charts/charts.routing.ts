@@ -2,6 +2,7 @@ import { Routes, RouterModule }  from '@angular/router';
 
 import { Charts } from './charts.component';
 import { ChartistJs } from './components/chartistJs/chartistJs.component';
+import { ModuleWithProviders } from '@angular/core';
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
@@ -14,4 +15,4 @@ const routes: Routes = [
   }
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing :ModuleWithProviders = RouterModule.forChild(routes);
