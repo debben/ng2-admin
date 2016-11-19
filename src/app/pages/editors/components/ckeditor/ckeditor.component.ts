@@ -1,12 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import './ckeditor.loader.ts';
+import 'style!./ckeditor.scss';
 
 @Component({
   selector: 'ckeditor-component',
-  encapsulation: ViewEncapsulation.None,
-  template: require('./ckeditor.html'),
-  styles: [require('./ckeditor.scss')]
+  templateUrl: './ckeditor.html',
 })
 
 export class Ckeditor {

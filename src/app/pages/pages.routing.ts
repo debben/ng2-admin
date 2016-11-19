@@ -18,7 +18,7 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule?sync=true' },
-      // { path: 'editors', loadChildren: 'app/pages/editors/editors.module#EditorsModule?sync=true' },
+      { path: 'editors', loadChildren: 'app/pages/editors/editors.module#EditorsModule?sync=true' },
       // //{ path: 'components', loadChildren: () => System.import('./components/components.module') }
       { path: 'charts', loadChildren: 'app/pages/charts/charts.module#ChartsModule?sync=true' },
       { path: 'ui', loadChildren: 'app/pages/ui/ui.module#UiModule?sync=true' },

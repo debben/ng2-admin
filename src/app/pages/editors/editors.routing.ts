@@ -1,4 +1,5 @@
 import { Routes, RouterModule }  from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
 
 import { Editors } from './editors.component';
 import { Ckeditor } from './components/ckeditor/ckeditor.component';
@@ -14,4 +15,4 @@ const routes: Routes = [
   }
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing: ModuleWithProviders = RouterModule.forChild(routes);
