@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import 'style!./selectInput.scss'
 
 @Component({
   selector: 'select-inputs',
-  styles: [require('./selectInput.scss')],
-  template: require('./selectInputs.html')
+  templateUrl: './selectInputs.html'
 })
 export class SelectInputs {
   constructor() { }

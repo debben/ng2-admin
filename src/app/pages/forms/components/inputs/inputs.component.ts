@@ -2,8 +2,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'inputs',
-  encapsulation: ViewEncapsulation.None,
-  template: require('./inputs.html'),
+  templateUrl: './inputs.html',
 })
 export class Inputs {
 

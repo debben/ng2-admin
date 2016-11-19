@@ -22,7 +22,7 @@ export const routes: Routes = [
       // //{ path: 'components', loadChildren: () => System.import('./components/components.module') }
       // { path: 'charts', loadChildren: './charts/charts.module' },
       { path: 'ui', loadChildren: 'app/pages/ui/ui.module#UiModule?sync=true' },
-      // { path: 'forms', loadChildren: './forms/forms.module' },
+      { path: 'forms', loadChildren: 'app/pages/forms/forms.module#FormsModule?sync=true' },
       // { path: 'tables', loadChildren: './tables/tables.module' },
       // { path: 'maps', loadChildren: './maps/maps.module' }
     ]
