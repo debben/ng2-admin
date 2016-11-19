@@ -24,7 +24,7 @@ export const routes: Routes = [
       { path: 'ui', loadChildren: 'app/pages/ui/ui.module#UiModule?sync=true' },
       { path: 'forms', loadChildren: 'app/pages/forms/forms.module#FormsModule?sync=true' },
       // { path: 'tables', loadChildren: './tables/tables.module' },
-      // { path: 'maps', loadChildren: './maps/maps.module' }
+      { path: 'maps', loadChildren: 'app/pages/maps/maps.module#MapsModule?sync=true' }
     ]
   }
 ];

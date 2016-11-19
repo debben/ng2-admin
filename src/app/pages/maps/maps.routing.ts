@@ -1,4 +1,5 @@
 import { Routes, RouterModule }  from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
 
 import { Maps } from './maps.component';
 import { BubbleMaps } from './components/bubbleMaps/bubbleMaps.component';
@@ -20,4 +21,4 @@ const routes: Routes = [
   }
 ];
 
-export const routing = RouterModule.forChild(routes);
+export const routing :ModuleWithProviders = RouterModule.forChild(routes);
