@@ -22,4 +22,4 @@ import { TreeView } from './components/treeView/treeView.component';
     TreeComponent
   ]
 })
-export default class ComponentsModule {}
+export class ComponentsModule {}

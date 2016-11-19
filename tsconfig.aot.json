@@ -39,7 +39,8 @@
     "src/app/pages/maps/maps.module.ts",
     "src/app/pages/register/register.module.ts",
     "src/app/pages/login/login.module.ts",
-    "src/app/pages/editors/editors.module.ts"
+    "src/app/pages/editors/editors.module.ts",
+    "src/app/pages/components/components.module.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,

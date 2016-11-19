@@ -3,7 +3,7 @@ import {TreeModel} from 'ng2-tree';
 
 @Component({
   selector: 'tree-view',
-  template: require('./treeView.html'),
+  templateUrl: './treeView.html',
 })
 
 export class TreeView {
