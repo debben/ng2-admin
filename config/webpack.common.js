@@ -62,7 +62,7 @@ module.exports = function (options) {
       extensions: ['.ts', '.js', '.css', '.scss', '.json'],
 
       // An array of directory names to be resolved to the current directory
-      modules: [helpers.root('src'), 'node_modules'],
+      modules: [helpers.root('src'), path.resolve(process.cwd(), 'node_modules')],
 
       alias: {
         "lazy/dashboard": "app/pages/dashboard"
