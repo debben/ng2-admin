@@ -23,7 +23,7 @@ export const routes: Routes = [
       { path: 'charts', loadChildren: 'app/pages/charts/charts.module#ChartsModule?sync=true' },
       { path: 'ui', loadChildren: 'app/pages/ui/ui.module#UiModule?sync=true' },
       { path: 'forms', loadChildren: 'app/pages/forms/forms.module#FormsModule?sync=true' },
-      // { path: 'tables', loadChildren: './tables/tables.module' },
+      { path: 'tables', loadChildren: 'app/pages/tables/tables.module#TablesModule?sync=true' },
       { path: 'maps', loadChildren: 'app/pages/maps/maps.module#MapsModule?sync=true' }
     ]
   }

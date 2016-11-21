@@ -79,6 +79,11 @@ module.exports = function (options) {
 
       rules: [
         {
+          test: /\.js$/,
+          loaders: ['angular2-template-loader'],
+          exclude: [path.resolve(process.cwd(), 'node_modules', '@angular')]
+        },
+        {
           test: /\.ts$/,
           loader: 'string-replace-loader',
           query: {

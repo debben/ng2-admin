@@ -31,15 +31,16 @@
   ],
   "files": [
     "src/custom-typings.d.ts",
-    "src/app/app.module.ts",
-    "src/app/pages/dashboard/dashboard.module.ts",
-    "src/app/pages/ui/ui.module.ts",
-    "src/app/pages/forms/forms.module.ts",
-    "src/app/pages/charts/charts.module.ts",
-    "src/app/pages/maps/maps.module.ts",
-    "src/app/pages/register/register.module.ts",
-    "src/app/pages/login/login.module.ts",
-    "src/app/pages/editors/editors.module.ts"
+    // "src/app/app.module.ts",
+    // "src/app/pages/dashboard/dashboard.module.ts",
+    // "src/app/pages/ui/ui.module.ts",
+    // "src/app/pages/forms/forms.module.ts",
+    // "src/app/pages/charts/charts.module.ts",
+    // "src/app/pages/maps/maps.module.ts",
+    // "src/app/pages/register/register.module.ts",
+    // "src/app/pages/login/login.module.ts",
+    // "src/app/pages/editors/editors.module.ts",
+    "src/app/pages/tables/tables.module.ts"
   ],
   "awesomeTypescriptLoaderOptions": {
     "forkChecker": true,
